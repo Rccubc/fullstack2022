@@ -73,7 +73,7 @@ const App = () => {
     });
   }, []);
 
-  const handleInputChange = (event) => {
+  const InputChangeHandler = (event) => {
     setFilterWord(event.target.value);
   };
 
@@ -84,7 +84,7 @@ const App = () => {
         <input
           value={filterWord}
           placeholder="please input the filter word"
-          onChange={handleInputChange}
+          onChange={InputChangeHandler}
         />
       </p>
       <Countries countries={shownCountries} showButtonHandler={setFilterWord} />
